@@ -1,0 +1,49 @@
+@import "./App.css";
+
+section {
+  /* background-color: white; */
+  padding-top: 50px !important;
+  padding-bottom: 80px !important;
+  width: 100% !important;
+}
+
+.col {
+}
+
+h2 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+  font-size: 3em;
+}
+
+h2 span {
+    color: var(--blue-color-l);
+    font-weight: bold;
+}
+
+#selfie {
+  display: block;
+  width: 302.4px;
+  height: 403.2px;
+  margin-left: 60px;
+  margin-right: 20px;
+  margin: 0 auto;
+}
+
+.button-div {
+  text-align: center;
+}
+
+.btn.btn-primary {
+  border-radius: 12px;
+  background-image: -webkit-linear-gradient(0deg, var(--blue-color-l) 15%, var(--blue-color-d) 85%);
+  text-transform: none;
+}
+
+.btn.btn-outline-primary {
+    border-radius: 12px;
+    border-color: var(--blue-color-l) !important;
+    color: var(--blue-color-l) !important;
+    text-transform: none;
+
+}
