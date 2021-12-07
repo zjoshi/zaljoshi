@@ -1,0 +1,50 @@
+@import "./App.css";
+
+.date {
+  color: var(--blue-color-d);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.vertical-timeline {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.vertical-timeline-element-title {
+  font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.vertical-timeline-element-content {
+
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1em;
+}
+
+.vertical-timeline-element-subtitle.big-subtitle {
+  font-size: 1.2em;
+}
+
+p {
+  font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: normal;
+}
+
+
+/* CUSTOM LINE COLOR */
+
+
+/* Icon container's border */
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px var(--blue-color-d), 3px 3px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #0EC7A9, 3px 3px 8px 2px rgba(0, 0, 0, 0.5);
+}

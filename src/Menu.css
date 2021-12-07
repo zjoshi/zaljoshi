@@ -1,0 +1,25 @@
+
+
+.navbar {
+  box-shadow: 0 0px;
+  border-radius: 18px 18px 0px 0px;
+}
+
+.nav-link {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+  font-size: 1em;
+  margin-left: 12px;
+  margin-right: 12px;
+  color: var(--blue-color-d) !important;
+}
+
+.nav-link.active {
+  color: var(--blue-color-l) !important;
+}
+
+.nav-link:hover {
+
+  color: var(--blue-color-l) !important;
+
+}

@@ -2,12 +2,13 @@
 
 section {
   /* background-color: white; */
-  padding-top: 50px !important;
-  padding-bottom: 80px !important;
+  padding-top: 30px;
+  padding-bottom: 60px;
   width: 100% !important;
 }
 
-.col {
+#home {
+  padding-top: 60px;
 }
 
 h2 {
@@ -21,8 +22,20 @@ h2 span {
     font-weight: bold;
 }
 
+h3 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+  font-size: 2em;
+}
+
+h4 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+  font-size: 1.5em;
+}
+
 #selfie {
-  display: block;
+  display: flex;
   width: 302.4px;
   height: 403.2px;
   margin-left: 60px;
@@ -45,5 +58,31 @@ h2 span {
     border-color: var(--blue-color-l) !important;
     color: var(--blue-color-l) !important;
     text-transform: none;
+
+}
+
+.btn.btn-primary.btn-resume {
+
+}
+
+li {
+  display: inline-block;
+  margin: 0 0.3em 0.3em 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+li span {
+  display: inline-block;
+  padding: 0 2em;
+  background-color: var(--blue-color-l);
+  border-radius: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 2em;
+  box-shadow: 0.2em 0.2em 0.4em #ABABAB;
 
 }

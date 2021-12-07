@@ -1,11 +1,10 @@
 .wrapper {
 	left: 10%;
 	right: 10%;
-	top: 20%;
+	top: 100px;
 	bottom: 10%;
-	position: absolute;
+	position: relative;
 	height: 100%;
 	width: 80%;
-  background-color: white;
 	border-radius: 18px 18px 0px 0px;
 }
