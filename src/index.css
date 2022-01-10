@@ -8,11 +8,48 @@ body {
   	background-image: -webkit-linear-gradient(0deg, var(--blue-color-d) 15%, var(--blue-color-l) 85%);
   	-ms-overflow-style: scrollbar;
   	overflow-x: scroll;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    font-family: "hind", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
       Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h2 {
+  font-family: "hind", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: "hind", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+  font-size: 2em;
+}
+
+h4 {
+  font-family: "hind", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+h5 {
+  font-family: "hind", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+h6 {
+  font-family: "hind", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: normal;
+  color: grey;
+  font-size: 1em;
+}
+
+p {
+  color: #5c5b66;
+  font-family: "hind", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: normal;
 }

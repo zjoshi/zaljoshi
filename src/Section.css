@@ -2,8 +2,8 @@
 
 section {
   /* background-color: white; */
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 30px;
   width: 100% !important;
 }
 
@@ -11,27 +11,13 @@ section {
   padding-top: 60px;
 }
 
-h2 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
-  font-size: 3em;
+#about {
+  background-color: white;
 }
 
 h2 span {
     color: var(--blue-color-l);
     font-weight: bold;
-}
-
-h3 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
-  font-size: 2em;
-}
-
-h4 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: lighter;
-  font-size: 1.5em;
 }
 
 #selfie {
@@ -79,10 +65,10 @@ li span {
   display: inline-block;
   padding: 0 2em;
   background-color: var(--blue-color-l);
-  border-radius: 8px;
+  border-radius: 15px;
   white-space: nowrap;
   overflow: hidden;
   line-height: 2em;
-  box-shadow: 0.2em 0.2em 0.4em #ABABAB;
+  /*box-shadow: 1px 1px 1px #ABABAB;*/
 
 }

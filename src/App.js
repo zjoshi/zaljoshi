@@ -19,7 +19,7 @@ class App extends React.Component {
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 20) {
+        if (window.pageYOffset >= sectionTop - 60) {
           current = section.getAttribute("id"); }
         });
 

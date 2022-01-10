@@ -9,6 +9,8 @@ function WhitePage() {
       <Section title="Home"></Section>
       <Section title="About"></Section>
       <Section title="Resume"></Section>
+      <Section title="Projects"></Section>
+      <Section title="Art"></Section>
     </div>
   );
 }

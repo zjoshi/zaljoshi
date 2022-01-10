@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import SELFIE from './images/SELFIE.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -7,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 import { FaMapPin } from "react-icons/fa";
 import Resume from './Resume';
 import ResumePaper from './files/resumepaper.pdf';
+import Projects from './Projects';
+import Art from './Art';
 import './Section.css';
 
 
@@ -41,13 +43,15 @@ function renderHome() {
                 <h2>Hi. I'm <span>Zal</span>.</h2>
               </Row>
               <Row className="mt-4">
-                I’m a developer and designer focusing on front-end development,
-                UI/UX design, and user research.
-                <div className="mt-4"> <FaMapPin /> New York, NY </div>
-                <div className="mt-4 button-div">
+                <h5>I’m a developer and designer focusing on front-end development,
+                UI/UX design, and user research.</h5>
+              </Row>
+              <Row>
+                <div className="mt-4"> <h5> <span><FaMapPin /> </span> New York, NY </h5> </div>
+                <div className="mt-4 text-left">
                   <br/>
                   <br/>
-                  <Button variant="primary" className="btn btn-primary">About Me</Button>
+                  <Button variant="primary" className="btn btn-primary" href="#about">About Me</Button>
                   <Button variant="outline-primary" className="btn btn-outline-primary">Contact Me</Button>
                 </div>
 
@@ -173,11 +177,23 @@ function renderResume() {
 }
 
 function renderProjects() {
-  return;
+  return (
+    <section id='projects'>
+      <Projects></Projects>
+    </section>
+  );
 }
 
 function renderArt() {
-  return;
+  return (
+    <section id='art'>
+      <Container>
+        <Row className="ml-5 mb-5"><h3>Art</h3></Row>
+
+        <Art></Art>
+      </Container>
+    </section>
+  );
 }
 
 function renderContact() {

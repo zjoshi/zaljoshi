@@ -13,8 +13,7 @@ function Resume() {
     //borderLeft: '2px solid #043D63',
     //borderBottom: '2px solid #043D63',
     borderTop: '7px solid #043D63',
-    borderRadius: '12px',
-    boxShadow: '0px 3px 7px #ABABAB'
+    boxShadow: '0px 1px 12px #D1D1D1'
   };
 
   var schoolTimelineElementStyle =  {
@@ -23,8 +22,7 @@ function Resume() {
     //borderLeft: '2px solid #0EC7A9',
     //borderBottom: '2px solid #0EC7A9',
     borderTop: '7px solid #0EC7A9',
-    borderRadius: '12px',
-    boxShadow: '0px 3px 7px #ABABAB'
+    boxShadow: '0px 1px 12px #D1D1D1'
   };
 
   return (
@@ -107,7 +105,7 @@ function Resume() {
       <h4 className="vertical-timeline-element-subtitle">Ann Arbor, MI</h4>
         <p>
           User Interface Development, Web Systems, Computer Security,
-          Mobile Application Development, Cognitive Pyschology
+          Mobile Application Development, Cognitive Psychology
           <br /><br />
           LSA Honors Program
         </p>
