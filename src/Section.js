@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import SELFIE from './images/SELFIE.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 import { FaMapPin } from "react-icons/fa";
 import Resume from './Resume';
 import ResumePaper from './files/resumepaper.pdf';
@@ -14,201 +15,216 @@ import './Section.css';
 
 
 
-function Section(props) {
-
-  switch (props.title) {
-    case "Home":
-      return renderHome();
-    case "About":
-      return renderAbout();
-    case "Resume":
-      return renderResume();
-    case "Projects":
-      return renderProjects();
-    case "Art":
-      return renderArt();
-    case "Contact":
-      return renderContact();
-    default:
-      return (<div></div>);
+class Section extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {isMobile: false};
   }
+
+  componentDidMount() {
+    window.addEventListener('resize', () => {
+        this.setState({
+            isMobile: window.innerWidth < 768
+        });
+    }, false);
 }
 
-function renderHome() {
-  return (
-    <section id="home">
-      <Container>
-        <Row className="ml-5 mr-5 mt-4">
-          <Col>
-              <Row className="mt-4">
-                <h2>Hi. I'm <span>Zal</span>.</h2>
-              </Row>
-              <Row className="mt-4">
-                <h5>I’m a developer and designer focusing on front-end development,
-                UI/UX design, and user research.</h5>
-              </Row>
+
+  renderHome() {
+    return (
+      <section id="home">
+        <Container>
+          <Row className="ml-1 ml-md-5 mr-1 mr-md-5">
+            <Col className="mt-4">
+                <Row className="mt-4">
+                  <h2>Hi. I'm <span>Zal</span>.</h2>
+                </Row>
+                <Row className="mt-4">
+                  <h5>I’m a developer and designer focusing on front-end development,
+                  UI/UX design, and user research.</h5>
+                </Row>
+                <Row>
+                  <div className="mt-4"> <h5> <span><FaMapPin /> </span> New York, NY </h5> </div>
+                  <div className="mt-4" style={{display: 'inline-flex', }} >
+                    <Button variant="primary" className="btn btn-primary" href="#about" style={{width:'50%'}}>About Me</Button>
+                    <Button variant="outline-primary" className="btn btn-outline-primary" href="#contact" style={{width:'50%'}}>Contact Me</Button>
+                  </div>
+                  <br/>
+                  <br/>
+                </Row>
+
+            </Col>
+
+
+            <Col className="mt-4">
+                <Image id="selfie" className="shadow" src={SELFIE}/>
+
+                <Row >
+                </Row>
+            </Col>
+
+          </Row>
+
+
+
+          <br/>
+          <br/>
+        </Container>
+    </section>
+    );
+  }
+
+  renderAbout() {
+    return (
+
+      <section id="about">
+        <Container>
+          <Row>
+            <Col lg='auto' className="ml-5">
+              <h3>About me</h3>
+
+            </Col>
+
+            <Col className="mr-4 ml-4 pl-2 pr-2">
               <Row>
-                <div className="mt-4"> <h5> <span><FaMapPin /> </span> New York, NY </h5> </div>
-                <div className="mt-4 text-left">
-                  <br/>
-                  <br/>
-                  <Button variant="primary" className="btn btn-primary" href="#about">About Me</Button>
-                  <Button variant="outline-primary" className="btn btn-outline-primary" href="#contact">Contact Me</Button>
-                </div>
+                  <p>
+                    I am a front-end developer and software engineer. My interests include
+                    <span style={{color: "#1696B9"}}> human-computer interaction</span>,
+                    <span style={{color: "#0EC7A9"}}> the psychology of technology</span>,
+                    <span style={{color: "#8559FD"}}> art and design</span>, and
+                    <span style={{color: "#1A42AF"}}> prototyping</span>.
 
+                    <br />
+                    <br />
+
+                    In my free time I enjoy digital art on Procreate and photography.
+                    I am always looking to express my creativity in fun, new technological ways!
+
+                  </p>
               </Row>
 
-          </Col>
-
-
-          <Col>
-              <img id="selfie" className="shadow" src={SELFIE}/>
-
-              <Row >
+              <Row className="mt-4">
+                <h4>Tools I love</h4>
+                <br />
+                <br />
+                <ul>
+                  <li><span>Javascript</span></li>
+                  <li><span>HTML/CSS</span></li>
+                  <li><span>C#</span></li>
+                  <li><span>.NET</span></li>
+                  <li><span>React</span></li>
+                  <li><span>Typescript</span></li>
+                  <li><span>Vue.js</span></li>
+                  <li><span>Python</span></li>
+                  <li><span>C++</span></li>
+                  <li><span>Figma</span></li>
+                  <li><span>Photoshop</span></li>
+                  <li><span>Adobe XD</span></li>
+                  <li><span>Illustrator</span></li>
+                  <li><span>InVision</span></li>
+                  <li><span>Procreate</span></li>
+                </ul>
               </Row>
-          </Col>
 
-        </Row>
-
+            </Col>
 
 
-        <br/>
-        <br/>
-      </Container>
-  </section>
-);
-}
+          </Row>
 
-function renderAbout() {
-  return (
-
-    <section id="about">
-      <Container>
-        <Row md="auto" className="mr-5 mt-4">
-          <Col className="ml-5">
-            <h3>About me</h3>
-
-          </Col>
-
-          <Col md={8}>
-            <Row>
-                <p>
-                  I am a front-end developer and software engineer. My interests include
-                  <span style={{color: "#1696B9"}}> human-computer interaction</span>,
-                  <span style={{color: "#0EC7A9"}}> the psychology of technology</span>,
-                  <span style={{color: "#8559FD"}}> art and design</span>, and
-                  <span style={{color: "#1A42AF"}}> prototyping</span>.
-
-                  <br />
-                  <br />
-
-                  In my free time I enjoy digital art on Procreate and photography.
-                  I am always looking to express my creativity in fun, new technological ways!
-
-                </p>
-            </Row>
-
-            <Row className="mt-4">
-              <h4>Tools I love</h4>
-              <br />
-              <br />
-              <ul>
-                <li><span>Javascript</span></li>
-                <li><span>HTML/CSS</span></li>
-                <li><span>C#</span></li>
-                <li><span>.NET</span></li>
-                <li><span>React</span></li>
-                <li><span>Typescript</span></li>
-                <li><span>Vue.js</span></li>
-                <li><span>Python</span></li>
-                <li><span>C++</span></li>
-                <li><span>Figma</span></li>
-                <li><span>Photoshop</span></li>
-                <li><span>Adobe XD</span></li>
-                <li><span>Illustrator</span></li>
-                <li><span>InVision</span></li>
-                <li><span>Procreate</span></li>
-              </ul>
-            </Row>
-
-          </Col>
-
-
-        </Row>
-
-      </Container>
+        </Container>
 
 
 
-    </section>
-  );
+      </section>
+    );
 
-}
+  }
 
-function renderResume() {
-  return (
-    <section id="resume">
-      <Container>
-        <Row>
-          <Col className="ml-5">
-            <h3>Resume</h3>
-          </Col>
-          <Col className="mr-5 text-right">
-            <Button
-              variant="primary"
-              className="btn btn-primary btn-resume"
-              href={ResumePaper}
-              target="_blank"
+  renderResume() {
+    return (
+      <section id="resume">
+        <Container>
+          <Row>
+            <Col className="ml-5">
+              <h3>Resume</h3>
+            </Col>
+            <Col className="mr-5 text-right">
+              <Button
+                variant="primary"
+                className="btn btn-primary btn-resume"
+                href={ResumePaper}
+                target="_blank"
 
-            >
+              >
 
-              Download Paper</Button>
-          </Col>
-
-          <br />
-          <br />
-          <br />
-          <Resume></Resume>
-
-        </Row>
-      </Container>
-
-    </section>
-  )
-}
-
-function renderProjects() {
-  return (
-    <section id='projects'>
-      <Projects></Projects>
-    </section>
-  );
-}
-
-function renderArt() {
-  return (
-    <section id='art'>
-      <Container>
-        <Row className="ml-5 mb-5"><h3>Art</h3></Row>
-
-        <Art></Art>
-      </Container>
-    </section>
-  );
-}
-
-function renderContact() {
-
-  return (
-    <section id="contact">
-      <Contact></Contact>
-      <br />
-      <br />
-      <br />
-    </section>
+                Download Paper</Button>
+            </Col>
+          </Row>
 
 
-  )
+          <Row className="mt-5">
+            <Resume></Resume>
+          </Row>
+
+        </Container>
+
+      </section>
+    )
+  }
+
+  renderProjects() {
+    return (
+      <section id='projects'>
+        <Projects isMobile={this.state.isMobile}></Projects>
+      </section>
+    );
+  }
+
+  renderArt() {
+    return (
+      <section id='art'>
+        <Container>
+          <Row className="ml-5 mb-5"><h3>Art</h3></Row>
+
+          <Art></Art>
+        </Container>
+      </section>
+    );
+  }
+
+
+  renderContact() {
+
+    return (
+      <section id="contact">
+        <Contact></Contact>
+        <br />
+        <br />
+        <br />
+      </section>
+
+
+    )
+  }
+
+  render() {
+    switch (this.props.title) {
+      case "Home":
+        return this.renderHome();
+      case "About":
+        return this.renderAbout();
+      case "Resume":
+        return this.renderResume();
+      case "Projects":
+        return this.renderProjects();
+      case "Art":
+        return this.renderArt();
+      case "Contact":
+        return this.renderContact();
+      default:
+        return (<div></div>);
+    }
+  }
 }
 
 

@@ -22,10 +22,13 @@ h2 span {
 
 #selfie {
   display: flex;
-  width: 302.4px;
-  height: 403.2px;
-  margin-left: 60px;
-  margin-right: 20px;
+  /* width: 302.4px; */
+  /* height: 403.2px; */
+  min-width: 151.2px;
+  min-height: 134.4px;
+  width: 70%;
+  /* margin-left: 60px; */
+  /* margin-right: 20px; */
   margin: 0 auto;
 }
 
@@ -40,10 +43,10 @@ h2 span {
 }
 
 .btn.btn-outline-primary {
-    border-radius: 12px;
-    border-color: var(--blue-color-l) !important;
-    color: var(--blue-color-l) !important;
-    text-transform: none;
+  border-radius: 12px;
+  border-color: var(--blue-color-l) !important;
+  color: var(--blue-color-l) !important;
+  text-transform: none;
 
 }
 

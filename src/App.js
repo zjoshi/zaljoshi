@@ -33,7 +33,17 @@ class App extends React.Component {
 
 
   render() {
-    return (<WhitePage />)
+    return (
+    <div>
+      <WhitePage />
+      <footer class="py-5">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; Zal Joshi 2022</p>
+          <p class="m-0 text-center text-white">Last updated: January 2022</p>
+        </div>
+      </footer>
+    </div>
+    )
   }
 }
 

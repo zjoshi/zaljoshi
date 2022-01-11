@@ -37,8 +37,9 @@ class Projects extends Component {
 
 
   UnivieMed() {
+
     return (
-      <Row className="ml-5 mr-4 mt-4 mb-5">
+      <Row className="ml-1 mr-1 ml-md-5 mr-md-5 mt-5 mb-5">
         <Col className="mt-4" lg={5}>
           <h4 style={{fontWeight: 'bold'}}>UnivieMed, a refugee health portal</h4>
           <h6>Cornell Tech x Univie Health</h6>
@@ -63,7 +64,7 @@ class Projects extends Component {
 
   MyGarden() {
     return (
-      <Row className="ml-5 mr-4 mt-4 mb-5">
+      <Row className="ml-1 mr-1 ml-md-5 mr-md-5 mt-5 mb-5">
         <Col className="mt-4" lg={5}>
           <h4 style={{fontWeight: 'bold'}}>MyGarden, a plant tracking mobile application</h4>
           <h6>Adobe XD</h6>
