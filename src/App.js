@@ -36,10 +36,16 @@ class App extends React.Component {
     return (
     <div>
       <WhitePage />
-      <footer class="py-5">
-        <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; Zal Joshi 2022</p>
-          <p class="m-0 text-center text-white">Last updated: January 2022</p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <footer style={{position: "relative"}} className="py-5">
+        <div className="container">
+          <p className="m-0 text-center text-white" style={{fontSize:"10px"}}>Copyright &copy; Zal Joshi 2022</p>
+          <p className="m-0 text-center text-white" style={{fontSize:"10px"}}>Last updated: January 2022</p>
         </div>
       </footer>
     </div>
