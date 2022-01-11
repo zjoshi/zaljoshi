@@ -9,6 +9,7 @@ import Resume from './Resume';
 import ResumePaper from './files/resumepaper.pdf';
 import Projects from './Projects';
 import Art from './Art';
+import Contact from './Contact';
 import './Section.css';
 
 
@@ -52,7 +53,7 @@ function renderHome() {
                   <br/>
                   <br/>
                   <Button variant="primary" className="btn btn-primary" href="#about">About Me</Button>
-                  <Button variant="outline-primary" className="btn btn-outline-primary">Contact Me</Button>
+                  <Button variant="outline-primary" className="btn btn-outline-primary" href="#contact">Contact Me</Button>
                 </div>
 
               </Row>
@@ -197,7 +198,17 @@ function renderArt() {
 }
 
 function renderContact() {
-  return;
+
+  return (
+    <section id="contact">
+      <Contact></Contact>
+      <br />
+      <br />
+      <br />
+    </section>
+
+
+  )
 }
 
 

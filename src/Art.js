@@ -4,18 +4,16 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import { Skeleton } from 'antd';
+import 'antd/dist/antd.css';
+
 
 const axios = require('axios').default;
 
 class Art extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: [], images: [] , gridImages: []};
-  }
-
-
-  populateImageData() {
-
+    this.state = { data: [], images: [] , gridImages: [], hasLoaded: false};
   }
 
   async componentDidMount() {
@@ -90,7 +88,8 @@ class Art extends React.Component {
           //thumbnailHeight: 174,
         };
         this.setState({gridImages: [...this.state.gridImages, image]});
-        }
+      }
+      this.setState({hasLoaded: true});
 
     });
 
@@ -99,6 +98,17 @@ class Art extends React.Component {
 
 
   render() {
+     let content = "";
+     if (!this.state.hasLoaded) {
+       content = <Skeleton loading={!this.state.hasLoaded} active />;
+     }
+     else {
+       content = <Gallery id="gallery" images={this.state.gridImages} enableLightbox={true}
+           enableImageSelection={false}/>;
+     }
+
+
+
     return (
 
       <div style={{
@@ -107,8 +117,7 @@ class Art extends React.Component {
                     width: "100%",
                     overflow: "auto"}}>
 
-          <Gallery id="gallery" images={this.state.gridImages} enableLightbox={true}
-              enableImageSelection={false}/>
+          {content}
      </div>
 
     );

@@ -1,6 +1,10 @@
 @import "./App.css";
 
 
-#projectImage {
+.project-image {
   width: 100%;
+}
+
+.project-image:hover {
+  box-shadow: 3px 3px 8px 2px #efefef;
 }

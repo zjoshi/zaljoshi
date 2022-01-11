@@ -1,0 +1,15 @@
+@import "./App.css";
+
+.social-icon {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 40px;
+  margin: 30px;
+  color: white !important;
+  box-shadow: 3px 3px 8px 2px #efefef;
+  border: 6px solid transparent;
+  }

@@ -11,6 +11,7 @@ function WhitePage() {
       <Section title="Resume"></Section>
       <Section title="Projects"></Section>
       <Section title="Art"></Section>
+      <Section title="Contact"></Section>
     </div>
   );
 }
