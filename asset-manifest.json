@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/zaljoshi/static/css/main.77dce0e1.chunk.css",
+    "main.css": "/zaljoshi/static/css/main.dbad7398.chunk.css",
     "main.js": "/zaljoshi/static/js/main.459bf741.chunk.js",
     "main.js.map": "/zaljoshi/static/js/main.459bf741.chunk.js.map",
     "runtime-main.js": "/zaljoshi/static/js/runtime-main.db87bdf7.js",
@@ -12,7 +12,7 @@
     "static/js/3.b9ae78b8.chunk.js.map": "/zaljoshi/static/js/3.b9ae78b8.chunk.js.map",
     "index.html": "/zaljoshi/index.html",
     "static/css/2.3dbc1580.chunk.css.map": "/zaljoshi/static/css/2.3dbc1580.chunk.css.map",
-    "static/css/main.77dce0e1.chunk.css.map": "/zaljoshi/static/css/main.77dce0e1.chunk.css.map",
+    "static/css/main.dbad7398.chunk.css.map": "/zaljoshi/static/css/main.dbad7398.chunk.css.map",
     "static/js/2.482303e2.chunk.js.LICENSE.txt": "/zaljoshi/static/js/2.482303e2.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/zaljoshi/static/media/arrow_right.0897f985.svg",
     "static/media/SELFIE.83ce8f5d.png": "/zaljoshi/static/media/SELFIE.83ce8f5d.png",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.db87bdf7.js",
     "static/css/2.3dbc1580.chunk.css",
     "static/js/2.482303e2.chunk.js",
-    "static/css/main.77dce0e1.chunk.css",
+    "static/css/main.dbad7398.chunk.css",
     "static/js/main.459bf741.chunk.js"
   ]
 }
