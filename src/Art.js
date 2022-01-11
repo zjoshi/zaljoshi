@@ -45,7 +45,6 @@ class Art extends React.Component {
         method: 'get',
         url: url
       }).then(function (response) {
-        console.log(response.data.photoset.photo);
         self.setState({data: response.data.photoset.photo});
       }).catch(function (error) {
         console.log(error);
@@ -66,8 +65,6 @@ class Art extends React.Component {
         nojsoncallback: 1
       };
 
-      console.log(img.id);
-
       let imgParams = new URLSearchParams(requestData);
       var requestUrl = `https://api.flickr.com/services/rest/?${imgParams}`;
 
@@ -80,7 +77,6 @@ class Art extends React.Component {
 
     Promise.all(promises).then(()=> {
       for (const img of this.state.images) {
-        console.log(img.sizes.size[0].source);
         let image = {
           src: img.sizes.size[8].source,
           thumbnail: img.sizes.size[9].source
